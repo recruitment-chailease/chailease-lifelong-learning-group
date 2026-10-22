@@ -3,48 +3,108 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Facebook Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chailease Lifelong Learning Group</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      margin: 0;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
     }
+
     .card {
-      background: white;
-      padding: 32px 24px;
-      margin: 20px;
-      border-radius: 16px;
+      width: 100%;
+      max-width: 460px;
+      padding: 48px 28px;
       text-align: center;
-      max-width: 360px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 40, 100, 0.08);
     }
-    h2 { color: #1877f2; }
-    p { color: #606770; line-height: 1.6; }
-    a {
+
+    .logo {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #e8f1ff;
+      color: #1769aa;
+      font-size: 30px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      color: #164b78;
+      font-size: 28px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 26px;
+      color: #5b6573;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .join-btn {
       display: block;
-      background: #1877f2;
-      color: white;
-      padding: 14px;
+      width: 100%;
+      padding: 16px 20px;
       border-radius: 10px;
+      background: #1769aa;
+      color: #ffffff;
       text-decoration: none;
+      font-size: 16px;
       font-weight: bold;
-      margin-top: 20px;
+      transition: background 0.2s;
+    }
+
+    .join-btn:hover {
+      background: #104d80;
+    }
+
+    .footer {
+      margin-top: 24px;
+      margin-bottom: 0;
+      font-size: 13px;
+      color: #87909c;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Facebook Group</h2>
-    <p>Nhấn nút bên dưới để mở nhóm Facebook.</p>
-    <a href="https://www.facebook.com/share/g/152H39U8K1J/?mibextid=wwXIfr"
-       target="_blank" rel="noopener">
-      MỞ NHÓM FACEBOOK
+  <main class="card">
+    <div class="logo">📚</div>
+
+    <h1>Chailease Lifelong Learning Group</h1>
+
+    <p>
+      Cùng học hỏi, chia sẻ kiến thức và phát triển mỗi ngày.
+      <br>
+      Tham gia Group ngay tại đây!
+    </p>
+
+    <a
+      class="join-btn"
+      href="https://www.facebook.com/share/g/152H39U8K1J/?mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Tham gia Group ngay →
     </a>
-  </div>
+
+    <p class="footer">Learn • Share • Grow</p>
+  </main>
 </body>
 </html>
