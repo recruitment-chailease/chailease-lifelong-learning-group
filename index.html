@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Chailease Lifelong Learning Group</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -51,7 +53,7 @@
       line-height: 1.35;
     }
 
-    p {
+    .description {
       margin: 0 0 26px;
       color: #5b6573;
       font-size: 16px;
@@ -61,13 +63,14 @@
     .join-btn {
       display: block;
       width: 100%;
-      padding: 16px 20px;
+      padding: 16px 12px;
       border-radius: 10px;
       background: #1769aa;
       color: #ffffff;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: bold;
+      white-space: nowrap;
       transition: background 0.2s;
     }
 
@@ -76,23 +79,36 @@
     }
 
     .footer {
-      margin-top: 24px;
-      margin-bottom: 0;
+      margin: 24px 0 0;
       font-size: 13px;
       color: #87909c;
     }
+
+    @media (max-width: 380px) {
+      .card {
+        padding: 36px 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .join-btn {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <main class="card">
+
     <div class="logo">📚</div>
 
     <h1>Chailease Lifelong Learning Group</h1>
 
-    <p>
+    <p class="description">
       Cùng học hỏi, chia sẻ kiến thức và phát triển mỗi ngày.
-      <br>
-      Tham gia Group ngay tại đây!
     </p>
 
     <a
@@ -101,10 +117,13 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      Tham gia Group ngay →
+      Tham gia Group ngay tại đây →
     </a>
 
-    <p class="footer">Learn • Share • Grow</p>
+    <p class="footer">
+      Learn &#8226; Share &#8226; Grow
+    </p>
+
   </main>
 </body>
 </html>
